@@ -6,6 +6,9 @@ from config import API
 import requests
 import json
 
+token = "7607472848:AAGKkjtE7TYbm-pSUtudt2tF2usRDOWEkww"
+sowa = telebot.TeleBot(token)
+
 selected_route = None  # Змінна для збереження вибраного маршруту
 selected_direction = None  # Змінна для збереження вибраного напрямку
 
@@ -115,5 +118,6 @@ def create_keyboard(buttons, back_button=True):
     if back_button:
         markup.add(types.KeyboardButton("🔙 Головне меню"))
     return markup
+
 
 sowa.polling(non_stop=True, interval=0)
