@@ -7,7 +7,7 @@ from config import routes  # твій словник маршрутів
 from config import API     # твій ключ для OpenWeatherMap
 
 # ================== Бот ==================
-TOKEN = "7607472848:AAGKkjtE7TYbm-pSUtudtF2usRDOWEkww"
+TOKEN = "7607472848:AAGKkjtE7TYbm-pSUtudt2tF2usRDOWEkww"
 bot = telebot.TeleBot(TOKEN)
 
 # Глобальні змінні для стану
@@ -127,3 +127,4 @@ def get_weather(city, chat_id):
 # ================== Запуск ==================
 print("Бот запущений...")
 bot.polling(non_stop=True, interval=0)
+
